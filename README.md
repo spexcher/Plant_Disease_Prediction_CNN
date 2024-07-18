@@ -1,46 +1,66 @@
-# Plant-Disease-Prediction-CNN-
+# Plant Disease Prediction Using CNN Image Classifier
+
+## Project Overview
+
 This project aims to develop a Convolutional Neural Network (CNN) to accurately predict plant diseases from images. The model is trained on a dataset of plant images with labeled diseases and uses advanced data augmentation techniques and a tuned model architecture to enhance performance.
-ey Components
-Data Curation:
 
-Collection and organization of the dataset containing images of healthy and diseased plants.
-Ensuring the dataset is properly formatted and split into training, validation, and test sets.
-Data Exploration and Visualization:
+## Key Components
 
-Use Seaborn for insightful visualizations to understand the distribution of image sizes and sample images from different classes.
-Example visualizations include joint plots of image dimensions and sample image grids.
-Data Augmentation:
+### 1. Data Curation
 
-Enhanced data augmentation techniques to artificially increase the size and variability of the dataset.
-Techniques include rotation, width and height shifts, shear transformations, zoom, and horizontal flips.
-Model Architecture:
+- Collection and organization of the dataset containing images of healthy and diseased plants.
+- Ensuring the dataset is properly formatted and split into training, validation, and test sets.
 
-Construction of a CNN model with multiple convolutional and pooling layers to extract features from the images.
-Addition of dropout layers to prevent overfitting and dense layers for classification.
-Model compiled with Adam optimizer and binary cross-entropy loss function.
-Training and Evaluation:
+### 2. Data Exploration and Visualization
 
-Training the model on augmented data with a specified number of epochs and batch size.
-Evaluation of the model's performance using validation data.
-Visualization of training and validation accuracy/loss over epochs using Seaborn.
-Steps to Execute the Project
-Import Dependencies:
+- Use Seaborn for insightful visualizations to understand the distribution of image sizes and sample images from different classes.
+- Example visualizations include joint plots of image dimensions and sample image grids.
 
-Import necessary libraries including TensorFlow, Keras, NumPy, Matplotlib, and Seaborn.
-Set Up Data Generators:
+### 3. Data Augmentation
 
-Use ImageDataGenerator from Keras for data augmentation and to create training and validation generators.
-Define and Compile the Model:
+- Enhanced data augmentation techniques to artificially increase the size and variability of the dataset.
+- Techniques include rotation, width and height shifts, shear transformations, zoom, and horizontal flips.
 
-Define a sequential model with convolutional, pooling, dropout, and dense layers.
-Compile the model with the Adam optimizer and binary cross-entropy loss.
-Train the Model:
+### 4. Model Architecture
 
-Fit the model using the training data generator and validate using the validation data generator.
-Monitor performance and adjust parameters as necessary.
-Evaluate and Visualize Results:
+- Construction of a CNN model with multiple convolutional and pooling layers to extract features from the images.
+- Addition of dropout layers to prevent overfitting and dense layers for classification.
+- Model compiled with Adam optimizer and binary cross-entropy loss function.
 
-Evaluate the final model performance on the test set.
-Use Seaborn to visualize the training history, including accuracy and loss curves.
-Conclusion
-This project provides a comprehensive approach to building a robust CNN-based image classifier for plant disease prediction. By utilizing advanced data augmentation techniques and a well-tuned model architecture, the project aims to achieve high accuracy and reliability in identifying plant diseases from images.
+### 5. Training and Evaluation
+
+- Training the model on augmented data with a specified number of epochs and batch size.
+- Evaluation of the model's performance using validation data.
+- Visualization of training and validation accuracy/loss over epochs using Seaborn.
+
+## Steps to Execute the Project
+
+1. **Setup Kaggle Account and Obtain API Key**:
+   - Create a Kaggle account and download the `kaggle.json` API key.
+   - Configure the path to the key in your notebook's `kaggle_secrets`.
+
+2. **Import Dependencies**:
+   - Import necessary libraries: TensorFlow, Keras, NumPy, Matplotlib, and Seaborn.
+
+3. **Set Up Data Generators**:
+   - Utilize `ImageDataGenerator` from Keras for data augmentation.
+   - Create training and validation generators using prepared datasets.
+
+4. **Define and Compile the Model**:
+   - Build a sequential model with convolutional, pooling, dropout, and dense layers.
+   - Compile the model using the Adam optimizer and binary cross-entropy loss.
+
+5. **Train the Model**:
+   - Fit the model with the training data generator.
+   - Validate using the validation data generator.
+   - Monitor performance and adjust parameters based on training metrics.
+
+6. **Evaluate and Visualize Results**:
+   - Evaluate the final model performance on a separate test set.
+   - Visualize training history with Seaborn to assess accuracy and loss curves.
+  
+7. **That's it. Thank you for viewing my Project..spexcher**
+
+## Conclusion
+
+This project aims to develop a robust CNN-based image classifier for predicting plant diseases. By employing advanced data augmentation techniques and optimizing model architecture, the goal is to achieve high accuracy in identifying plant diseases from images.
